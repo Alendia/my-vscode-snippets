@@ -1,0 +1,80 @@
+{
+	// Place your snippets for css here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Flex conntainer": {
+		"prefix": ["flex-f","flex-container"],
+		"body": [
+			"display: flex;",
+			"flex-direction: ${1:row/column};",
+			"justify-content: ${2:main axis};",
+			"align-items: ${3:cross axis};",
+			"flex-wrap: ${4:wrap/nowrap};"],
+		"description": "Flex display for container."
+	},
+	"Flex item": {
+		"prefix": ["flex-c", "flex-item"],
+		"body": [
+			"flex: ${1:shrink} ${2:grow} ${3:basis};",
+			"align-self: ${4: attribute}"
+		],
+		"description": "Flex display for item"
+	},
+	"Grid container": {
+		"prefix": ["grid-f", "grid-conntainer"],
+		"body": [
+			"display: grid;",
+			"grid-template-columns: ${1:width width};",
+			"grid-template-rows: ${2:height height};",
+			"column-gap: ${3:width};",
+			"row-gap: ${4:height};",
+			"justify-items: ${5:horizontal align};",
+			"align-items: ${6:vertical align};",
+			"grid-template-areas: ${7: repeat()\n'header header'\n'advert content'\n'footer footer'};"
+		],
+		"description": "Grid display for container"
+	},
+	"Grid item": {
+		"prefix": ["grid-c", "grid-item"],
+		"body": [
+			"grid-${1:column/row}: ${2:STARTNUM} / ${3:ENDNUM};",
+			"${4:justify/align}-self: ${5:attribute};",
+			"grid-area: ${6:areaname};",
+		],
+		"description": "Grid display for item"
+	},
+	// Centering in CSS
+	"Center block horizontally": {
+		"prefix": ["center-block-horizontally"],
+		"body": [
+			"margin: 0 auto;",
+			"width: ${1:WIDTH};",
+		],
+		"description": "Center block level element horizontally"
+	},
+	"Center inline horizontally": {
+		"prefix": ["center-inline-horizontally"],
+		"body": [
+			"text-align: center;"
+		],
+		"description": "Center inline or inline-* elements horizontally"
+	},
+	"Center vertically": {
+		"prefix": ["center-inline-vertically"],
+		"body": [
+			"display: flex;",
+			"align-items: center;"
+		],
+		"description": "Center elements vertically with flex"
+	}
+}
